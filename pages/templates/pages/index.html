@@ -1,0 +1,576 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+    <!-- Hero Section -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16 mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold text-coffee-brown mb-4">COFFEO</h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">An online coffee store</h2>
+                <p class="text-gray-600 mb-8">Straight to your doorstep. We don't roast our beans until we have your
+                    order.<br class="hidden md:block">Every order is roasted and shipped the same day.</p>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
+                    <button class="bg-coffee-brown text-white px-6 py-3 rounded-md hover:bg-coffee-light flex items-center justify-center md:justify-start">
+                        Explore our products
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                             fill="currentColor">
+                            <path fill-rule="evenodd"
+                                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <button class="text-coffee-brown hover:text-coffee-light px-6 py-3">Log in / sign up</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
+                    <div>
+                        <p class="text-2xl font-bold text-coffee-brown">+1000</p>
+                        <p class="text-gray-600">Our products</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-coffee-brown">+340k</p>
+                        <p class="text-gray-600">Total sales</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-coffee-brown">+340k</p>
+                        <p class="text-gray-600">Total coffee</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mt-8 md:mt-0" data-aos="fade-left" data-aos-duration="1000">
+                <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Splash" class="w-full rounded-lg shadow-xl object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-[#2C1810] text-center mb-4" data-aos="fade-up">Explore the recent
+            products</h2>
+        <p class="text-gray-600 text-center mb-16" data-aos="fade-up" data-aos-delay="100">Our delectable drink options,
+            including classic espresso choices, house specialties, fruit smoothies and frozen treats.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                 data-aos="fade-up" data-aos-delay="200">
+                <div class="relative flex justify-center mb-6">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-600 mb-2">Blend</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
+                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <div class="flex items-center justify-between">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                 data-aos="fade-up" data-aos-delay="200">
+                <div class="relative flex justify-center mb-6">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-600 mb-2">Blend</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
+                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <div class="flex items-center justify-between">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                 data-aos="fade-up" data-aos-delay="200">
+                <div class="relative flex justify-center mb-6">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-600 mb-2">Blend</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
+                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <div class="flex items-center justify-between">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                 data-aos="fade-up" data-aos-delay="200">
+                <div class="relative flex justify-center mb-6">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-600 mb-2">Blend</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
+                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <div class="flex items-center justify-between">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16 bg-coffee-cream rounded-lg mt-16" data-aos="fade-up">
+        <div class="text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">Join in and get %25 OFF!</h2>
+            <p class="text-gray-600 mb-8">Subscribe to our newsletter and get $25 OFF discount code.</p>
+            <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email"
+                       class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-coffee-brown">
+                <button class="bg-coffee-brown text-white px-6 py-2 rounded-md hover:bg-coffee-light">
+                    Register
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Coffee Beans Banner -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left side with coffee beans image -->
+            <div class="relative" data-aos="fade-right">
+                <img src="{% static 'images/coffee-beans.jpg' %}" alt="Coffee Beans" class="w-full h-[600px] object-cover rounded-3xl">
+                <div class="absolute bottom-8 left-8 bg-white p-4 rounded-2xl shadow-lg max-w-xs">
+                    <div class="flex items-center gap-4">
+                        <img src="{% static 'images/testimonial-1.jpg' %}" alt="Brooklyn Simmons"
+                             class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-coffee-brown">Brooklyn Simmons</h4>
+                            <p class="text-sm text-gray-600">Coffee is one of the most successful company... customer
+                                relationship is very good.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side with content -->
+            <div class="md:pl-12" data-aos="fade-left">
+                <h2 class="text-4xl font-bold text-[#2C1810] mb-6">We care about the quality of our products</h2>
+                <p class="text-gray-600 mb-12">Drinking coffee is one of the most global things you do each days here i
+                    can spend a long and comfortable time with this workspace facilities</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+                    <!-- Feature 1 -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-[#F9F5F2] p-4 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#2C1810] text-lg">Active community</h3>
+                            <p class="text-gray-600">You can reach out whenever you want!</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-[#8B5E3C] p-4 rounded-full">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#2C1810] text-lg">Best product design</h3>
+                            <p class="text-gray-600">We worked a lot to make a great experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-[#F9F5F2] p-4 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#2C1810] text-lg">Premium quality</h3>
+                            <p class="text-gray-600">A premium quality coffee is what our customers deserve</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-[#F9F5F2] p-4 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#2C1810] text-lg">The best material</h3>
+                            <p class="text-gray-600">Our product is made by premium materials</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl">
+                    <span class="mr-3 text-lg">Explore our products</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weekend Special Products -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold mb-4 text-center">
+            <span class="text-[#2C1810]">Weekend</span>
+            <span class="text-gray-500">special products</span>
+        </h2>
+        <p class="text-gray-800 text-center mb-12">Check out our daily special product that you can get with +%20
+            OFF!</p>
+
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+            <button class="text-[#2C1810] border-b-2 border-[#2C1810] font-medium">Accessories</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Coffee beans</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Apparel</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Instant Coffee</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Boundle</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg">
+                <div class="relative">
+                    <span class="absolute top-0 right-0 bg-[#F8EFE9] text-[#2C1810] px-4 py-1 rounded-full">%20</span>
+                    <div class="bg-[#F8F8F8] rounded-full p-8 flex items-center justify-center h-64">
+                        <img src="{% static 'images/spice-blend.jpg' %}" alt="Miele CM6 Thermal Carafe"
+                             class="w-48 h-48 object-contain">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-500 text-sm">Product name</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">Miele CM6 Thermal Carafe</h3>
+                    <div class="flex items-center mt-4">
+                        <span class="text-gray-400 line-through text-sm">$34</span>
+                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$12</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg">
+                <div class="relative">
+                    <span class="absolute top-0 right-0 bg-[#8B5E3C] text-white px-4 py-1 rounded-full">%20</span>
+                    <div class="bg-[#F8F8F8] rounded-full p-8 flex items-center justify-center h-64">
+                        <img src="{% static 'images/spice-blend.jpg' %}" alt="Ember Cup" class="w-48 h-48 object-contain">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-500 text-sm">Product name</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">NEW • Ember Cup</h3>
+                    <div class="flex items-center mt-4">
+                        <span class="text-gray-400 line-through text-sm">$9.66</span>
+                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$6.48</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg">
+                <div class="relative">
+                    <span class="absolute top-0 right-0 bg-[#F8EFE9] text-[#2C1810] px-4 py-1 rounded-full">%20</span>
+                    <div class="bg-[#F8F8F8] rounded-full p-8 flex items-center justify-center h-64">
+                        <img src="{% static 'images/spice-blend.jpg' %}" alt="Espro P3 French Press" class="w-48 h-48 object-contain">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-500 text-sm">Product name</p>
+                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">Espro P3 French Press</h3>
+                    <div class="flex items-center mt-4">
+                        <span class="text-gray-400 line-through text-sm">$6.88</span>
+                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$5.22</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
+                            Add to cart
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quality Section -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div class="text-center md:text-left" data-aos="fade-right">
+                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">We care about the quality of<br
+                        class="hidden md:block">our products</h2>
+                <p class="text-gray-600 mb-8">Drinking coffee is one of the most global things you do each day. Here I
+                    can spend a long and comfortable time with this delicious facilities.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-coffee-cream p-3 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-coffee-brown">Active community</h3>
+                            <p class="text-sm text-gray-600">Get help from our community whenever you want</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-coffee-cream p-3 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-coffee-brown">Best product design</h3>
+                            <p class="text-sm text-gray-600">Designed to give you the best experience</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-coffee-cream p-3 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-coffee-brown">Premium quality</h3>
+                            <p class="text-sm text-gray-600">Only the best ingredients and materials</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-coffee-cream p-3 rounded-full">
+                            <svg class="w-6 h-6 text-coffee-brown" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-coffee-brown">The best material</h3>
+                            <p class="text-sm text-gray-600">Carefully selected materials for durability</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl mt-8">
+                    <span class="mr-3 text-lg">Explore our products</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-8 md:mt-0" data-aos="fade-left">
+                <img src="{% static 'images/coffee-beans.jpg' %}" alt="Coffee Beans" class="w-full rounded-lg object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="w-full max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Image Gallery -->
+            <div class="md:col-span-2 grid grid-cols-2 gap-4" data-aos="fade-right">
+                <div class="space-y-4">
+                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Making" class="w-full h-48 object-cover rounded-lg">
+                    <img src="{% static '' %}images/coffee-beans.jpg" alt="Coffee Beans" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="space-y-4 mt-8">
+                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Shop" class="w-full h-64 object-cover rounded-lg">
+                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Latte Art" class="w-full h-48 object-cover rounded-lg">
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="flex flex-col justify-center" data-aos="fade-left">
+                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-8">What our customers say about us</h2>
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <div class="flex items-center mb-4">
+                        <img src="{% static 'images/testimonial-1.jpg' %}" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-coffee-brown">John Smith</h3>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The coffee from Coffeo is simply amazing. I've never tasted such fresh and
+                        flavorful beans. Their service is top-notch too!"</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="{% static 'images/testimonial-1.jpg' %}" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-coffee-brown">Sarah Johnson</h3>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I love how they roast the beans only after ordering. You can really taste
+                        the difference in freshness. Will definitely order again!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
