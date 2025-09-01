@@ -4,66 +4,72 @@
     <!-- Hero Section -->
     <div class="w-full max-w-7xl mx-auto px-4 py-16 mt-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
-                <h1 class="text-4xl md:text-6xl font-bold text-coffee-brown mb-4">COFFEO</h1>
-                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">An online coffee store</h2>
-                <p class="text-gray-600 mb-8">Straight to your doorstep. We don't roast our beans until we have your
-                    order.<br class="hidden md:block">Every order is roasted and shipped the same day.</p>
-                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
-                    <button class="bg-coffee-brown text-white px-6 py-3 rounded-md hover:bg-coffee-light flex items-center justify-center md:justify-start">
-                        Explore our products
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+            <div class="text-center md:text-right" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-modern text-coffee-brown mb-4">کافه کورش</h1>
+                <h2 class="text-2xl md:text-3xl font-modern text-coffee-brown mb-4">فروشگاه آنلاین قهوه</h2>
+                <p class="text-gray-600 mb-8 font-elegant">مستقیم تا درب منزل شما. ما دانه‌های قهوه را تا زمانی که سفارش
+                    شما را دریافت نکنیم برشته نمی‌کنیم.<br class="hidden md:block">هر سفارش در همان روز برشته و ارسال
+                    می‌شود.</p>
+                <div
+                        class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-reverse md:space-x-4 justify-center md:justify-end">
+                    <button
+                            class="bg-coffee-brown text-white px-6 py-3 rounded-md hover:bg-coffee-light flex items-center justify-center md:justify-end font-modern">
+                        مشاهده محصولات ما
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                              fill="currentColor">
                             <path fill-rule="evenodd"
                                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </button>
-                    <button class="text-coffee-brown hover:text-coffee-light px-6 py-3">Log in / sign up</button>
+                    <button class="text-coffee-brown hover:text-coffee-light px-6 py-3 font-modern">ورود /
+                        ثبت‌نام
+                    </button>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
                     <div>
-                        <p class="text-2xl font-bold text-coffee-brown">+1000</p>
-                        <p class="text-gray-600">Our products</p>
+                        <p class="text-2xl font-modern text-coffee-brown">+۱۰۰۰</p>
+                        <p class="text-gray-600 font-elegant">محصولات ما</p>
                     </div>
                     <div>
-                        <p class="text-2xl font-bold text-coffee-brown">+340k</p>
-                        <p class="text-gray-600">Total sales</p>
+                        <p class="text-2xl font-modern text-coffee-brown">+۳۴۰هزار</p>
+                        <p class="text-gray-600 font-elegant">فروش کل</p>
                     </div>
                     <div>
-                        <p class="text-2xl font-bold text-coffee-brown">+340k</p>
-                        <p class="text-gray-600">Total coffee</p>
+                        <p class="text-2xl font-modern text-coffee-brown">+۳۴۰هزار</p>
+                        <p class="text-gray-600 font-elegant">قهوه کل</p>
                     </div>
                 </div>
             </div>
             <div class="relative mt-8 md:mt-0" data-aos="fade-left" data-aos-duration="1000">
-                <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Splash" class="w-full rounded-lg shadow-xl object-cover">
+                <img src="{% static 'images/hero-coffee.png' %}" alt="Coffee Splash" class="w-full rounded-lg shadow-xl object-cover">
             </div>
         </div>
     </div>
 
     <!-- Products Section -->
     <div class="w-full max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-4xl font-bold text-[#2C1810] text-center mb-4" data-aos="fade-up">Explore the recent
-            products</h2>
-        <p class="text-gray-600 text-center mb-16" data-aos="fade-up" data-aos-delay="100">Our delectable drink options,
-            including classic espresso choices, house specialties, fruit smoothies and frozen treats.</p>
+        <h2 class="text-4xl font-modern text-[#2C1810] text-center mb-4" data-aos="fade-up">محصولات اخیر را کاوش کنید
+        </h2>
+        <p class="text-gray-600 text-center mb-16 font-elegant" data-aos="fade-up" data-aos-delay="100">گزینه‌های
+            نوشیدنی خوشمزه ما، شامل انتخاب‌های کلاسیک اسپرسو، تخصص‌های خانه، اسموتی‌های میوه و خوراکی‌های یخ‌زده.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Product Card 1 -->
             <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                  data-aos="fade-up" data-aos-delay="200">
                 <div class="relative flex justify-center mb-6">
-                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="مخلوط اسپایس ایسلند" class="w-48 h-64 object-cover">
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-600 mb-2">Blend</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
-                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <p class="text-gray-600 mb-2 font-elegant">مخلوط</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mb-2">مخلوط اسپایس ایسلند</h3>
+                    <p class="text-2xl font-modern text-[#2C1810] mb-4">۱۲ دلار</p>
                     <div class="flex items-center justify-between">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -83,16 +89,17 @@
             <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                  data-aos="fade-up" data-aos-delay="200">
                 <div class="relative flex justify-center mb-6">
-                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="مخلوط اسپایس ایسلند" class="w-48 h-64 object-cover">
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-600 mb-2">Blend</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
-                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <p class="text-gray-600 mb-2 font-elegant">مخلوط</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mb-2">مخلوط اسپایس ایسلند</h3>
+                    <p class="text-2xl font-modern text-[#2C1810] mb-4">۱۲ دلار</p>
                     <div class="flex items-center justify-between">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -112,16 +119,17 @@
             <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                  data-aos="fade-up" data-aos-delay="200">
                 <div class="relative flex justify-center mb-6">
-                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="مخلوط اسپایس ایسلند" class="w-48 h-64 object-cover">
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-600 mb-2">Blend</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
-                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <p class="text-gray-600 mb-2 font-elegant">مخلوط</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mb-2">مخلوط اسپایس ایسلند</h3>
+                    <p class="text-2xl font-modern text-[#2C1810] mb-4">۱۲ دلار</p>
                     <div class="flex items-center justify-between">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -141,16 +149,17 @@
             <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                  data-aos="fade-up" data-aos-delay="200">
                 <div class="relative flex justify-center mb-6">
-                    <img src="{% static 'images/spice-blend.jpg' %}" alt="Spice Iceland blend" class="w-48 h-64 object-cover">
+                    <img src="{% static 'images/spice-blend.jpg' %}" alt="مخلوط اسپایس ایسلند" class="w-48 h-64 object-cover">
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-600 mb-2">Blend</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mb-2">Spice iceland blend</h3>
-                    <p class="text-2xl font-bold text-[#2C1810] mb-4">$12</p>
+                    <p class="text-gray-600 mb-2 font-elegant">مخلوط</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mb-2">مخلوط اسپایس ایسلند</h3>
+                    <p class="text-2xl font-modern text-[#2C1810] mb-4">۱۲ دلار</p>
                     <div class="flex items-center justify-between">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -175,13 +184,13 @@
     <!-- Newsletter Section -->
     <div class="w-full max-w-7xl mx-auto px-4 py-16 bg-coffee-cream rounded-lg mt-16" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">Join in and get %25 OFF!</h2>
-            <p class="text-gray-600 mb-8">Subscribe to our newsletter and get $25 OFF discount code.</p>
+            <h2 class="text-2xl md:text-3xl font-modern text-coffee-brown mb-4">عضویت و دریافت ۲۵٪ تخفیف!</h2>
+            <p class="text-gray-600 mb-8 font-elegant">در خبرنامه ما عضو شوید و کد تخفیف ۲۵ دلاری دریافت کنید.</p>
             <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
-                <input type="email" placeholder="Enter your email"
-                       class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-coffee-brown">
-                <button class="bg-coffee-brown text-white px-6 py-2 rounded-md hover:bg-coffee-light">
-                    Register
+                <input type="email" placeholder="ایمیل خود را وارد کنید"
+                       class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-coffee-brown font-elegant">
+                <button class="bg-coffee-brown text-white px-6 py-2 rounded-md hover:bg-coffee-light font-elegant">
+                    ثبت‌نام
                 </button>
             </div>
         </div>
@@ -198,19 +207,19 @@
                         <img src="{% static 'images/testimonial-1.jpg' %}" alt="Brooklyn Simmons"
                              class="w-12 h-12 rounded-full object-cover">
                         <div>
-                            <h4 class="font-bold text-coffee-brown">Brooklyn Simmons</h4>
-                            <p class="text-sm text-gray-600">Coffee is one of the most successful company... customer
-                                relationship is very good.</p>
+                            <h4 class="font-modern text-coffee-brown">Brooklyn Simmons</h4>
+                            <p class="text-sm text-gray-600 font-elegant">Coffee is one of the most successful
+                                company... customer relationship is very good.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Right side with content -->
-            <div class="md:pl-12" data-aos="fade-left">
-                <h2 class="text-4xl font-bold text-[#2C1810] mb-6">We care about the quality of our products</h2>
-                <p class="text-gray-600 mb-12">Drinking coffee is one of the most global things you do each days here i
-                    can spend a long and comfortable time with this workspace facilities</p>
+            <div class="md:pr-12" data-aos="fade-left">
+                <h2 class="text-4xl font-modern text-[#2C1810] mb-6">ما به کیفیت محصولاتمان اهمیت می‌دهیم</h2>
+                <p class="text-gray-600 mb-12 font-elegant">نوشیدن قهوه یکی از جهانی‌ترین کارهایی است که هر روز انجام
+                    می‌دهید. اینجا می‌توانم زمان طولانی و راحتی را با این امکانات فضای کاری بگذرانم</p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                     <!-- Feature 1 -->
@@ -223,8 +232,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#2C1810] text-lg">Active community</h3>
-                            <p class="text-gray-600">You can reach out whenever you want!</p>
+                            <h3 class="font-modern text-[#2C1810] text-lg">جامعه فعال</h3>
+                            <p class="text-gray-600 font-elegant">هر زمان که بخواهید می‌توانید با ما در تماس باشید!</p>
                         </div>
                     </div>
 
@@ -237,8 +246,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#2C1810] text-lg">Best product design</h3>
-                            <p class="text-gray-600">We worked a lot to make a great experience</p>
+                            <h3 class="font-modern text-[#2C1810] text-lg">بهترین طراحی محصول</h3>
+                            <p class="text-gray-600 font-elegant">ما بسیار تلاش کردیم تا تجربه‌ای عالی ایجاد کنیم</p>
                         </div>
                     </div>
 
@@ -252,8 +261,9 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#2C1810] text-lg">Premium quality</h3>
-                            <p class="text-gray-600">A premium quality coffee is what our customers deserve</p>
+                            <h3 class="font-modern text-[#2C1810] text-lg">کیفیت برتر</h3>
+                            <p class="text-gray-600 font-elegant">قهوه با کیفیت برتر چیزی است که مشتریان ما شایسته آن
+                                هستند</p>
                         </div>
                     </div>
 
@@ -267,14 +277,15 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#2C1810] text-lg">The best material</h3>
-                            <p class="text-gray-600">Our product is made by premium materials</p>
+                            <h3 class="font-modern text-[#2C1810] text-lg">بهترین مواد</h3>
+                            <p class="text-gray-600 font-elegant">محصول ما از مواد برتر ساخته شده است</p>
                         </div>
                     </div>
                 </div>
 
-                <button class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl">
-                    <span class="mr-3 text-lg">Explore our products</span>
+                <button
+                        class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl font-elegant">
+                    <span class="ml-3 text-lg">مشاهده محصولات ما</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -287,19 +298,18 @@
 
     <!-- Weekend Special Products -->
     <div class="w-full max-w-7xl mx-auto px-4 py-16">
-        <h2 class="text-4xl font-bold mb-4 text-center">
-            <span class="text-[#2C1810]">Weekend</span>
-            <span class="text-gray-500">special products</span>
+        <h2 class="text-4xl font-modern mb-4 text-center">
+            <span class="text-[#2C1810]">محصولات ویژه</span>
+            <span class="text-gray-500">آخر هفته</span>
         </h2>
-        <p class="text-gray-800 text-center mb-12">Check out our daily special product that you can get with +%20
-            OFF!</p>
+        <p class="text-gray-800 text-center mb-12 font-elegant">محصولات ویژه روزانه ما را با ۲۰٪ تخفیف ببینید!</p>
 
         <div class="flex flex-wrap justify-center gap-8 mb-12">
-            <button class="text-[#2C1810] border-b-2 border-[#2C1810] font-medium">Accessories</button>
-            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Coffee beans</button>
-            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Apparel</button>
-            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Instant Coffee</button>
-            <button class="text-gray-400 hover:text-[#2C1810] font-medium">Boundle</button>
+            <button class="text-[#2C1810] border-b-2 border-[#2C1810] font-modern">لوازم جانبی</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-modern">دانه‌های قهوه</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-modern">پوشاک</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-modern">قهوه فوری</button>
+            <button class="text-gray-400 hover:text-[#2C1810] font-modern">پکیج</button>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -313,16 +323,17 @@
                     </div>
                 </div>
                 <div class="mt-6">
-                    <p class="text-gray-500 text-sm">Product name</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">Miele CM6 Thermal Carafe</h3>
+                    <p class="text-gray-500 text-sm font-elegant">نام محصول</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mt-1">مایله CM6 ترمال کاراف</h3>
                     <div class="flex items-center mt-4">
-                        <span class="text-gray-400 line-through text-sm">$34</span>
-                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$12</span>
+                        <span class="text-gray-400 line-through text-sm font-elegant">۳۴ دلار</span>
+                        <span class="text-[#2C1810] text-2xl font-modern mr-2">۱۲ دلار</span>
                     </div>
                     <div class="flex items-center justify-between mt-6">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -349,16 +360,17 @@
                     </div>
                 </div>
                 <div class="mt-6">
-                    <p class="text-gray-500 text-sm">Product name</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">NEW • Ember Cup</h3>
+                    <p class="text-gray-500 text-sm font-elegant">نام محصول</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mt-1">جدید • فنجان امبر</h3>
                     <div class="flex items-center mt-4">
-                        <span class="text-gray-400 line-through text-sm">$9.66</span>
-                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$6.48</span>
+                        <span class="text-gray-400 line-through text-sm font-elegant">۹.۶۶ دلار</span>
+                        <span class="text-[#2C1810] text-2xl font-modern mr-2">۶.۴۸ دلار</span>
                     </div>
                     <div class="flex items-center justify-between mt-6">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -385,16 +397,17 @@
                     </div>
                 </div>
                 <div class="mt-6">
-                    <p class="text-gray-500 text-sm">Product name</p>
-                    <h3 class="text-xl font-bold text-[#2C1810] mt-1">Espro P3 French Press</h3>
+                    <p class="text-gray-500 text-sm font-elegant">نام محصول</p>
+                    <h3 class="text-xl font-modern text-[#2C1810] mt-1">اسپرو P3 فرنچ پرس</h3>
                     <div class="flex items-center mt-4">
-                        <span class="text-gray-400 line-through text-sm">$6.88</span>
-                        <span class="text-[#2C1810] text-2xl font-bold ml-2">$5.22</span>
+                        <span class="text-gray-400 line-through text-sm font-elegant">۶.۸۸ دلار</span>
+                        <span class="text-[#2C1810] text-2xl font-modern mr-2">۵.۲۲ دلار</span>
                     </div>
                     <div class="flex items-center justify-between mt-6">
-                        <button class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center">
-                            Add to cart
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        <button
+                                class="text-[#2C1810] font-medium hover:text-coffee-light flex items-center font-modern">
+                            افزودن به سبد خرید
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -418,10 +431,10 @@
     <div class="w-full max-w-7xl mx-auto px-4 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div class="text-center md:text-left" data-aos="fade-right">
-                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-4">We care about the quality of<br
+                <h2 class="text-2xl md:text-3xl font-beautiful text-coffee-brown mb-4">We care about the quality of<br
                         class="hidden md:block">our products</h2>
-                <p class="text-gray-600 mb-8">Drinking coffee is one of the most global things you do each day. Here I
-                    can spend a long and comfortable time with this delicious facilities.</p>
+                <p class="text-gray-600 mb-8 font-elegant">Drinking coffee is one of the most global things you do each
+                    day. Here I can spend a long and comfortable time with this delicious facilities.</p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div class="flex items-start space-x-4">
@@ -478,7 +491,8 @@
                     </div>
                 </div>
 
-                <button class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl mt-8">
+                <button
+                        class="bg-[#2C1810] text-white px-8 py-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:shadow-xl font-elegant mt-8">
                     <span class="mr-3 text-lg">Explore our products</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
@@ -499,75 +513,85 @@
             <!-- Image Gallery -->
             <div class="md:col-span-2 grid grid-cols-2 gap-4" data-aos="fade-right">
                 <div class="space-y-4">
-                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Making" class="w-full h-48 object-cover rounded-lg">
-                    <img src="{% static '' %}images/coffee-beans.jpg" alt="Coffee Beans" class="w-full h-64 object-cover rounded-lg">
+                    <img src="{% static 'images/hero-coffee.png' %}" alt="Coffee Making" class="w-full h-48 object-cover rounded-lg">
+                    <img src="{% static 'images/coffee-beans.jpg' %}" alt="Coffee Beans" class="w-full h-64 object-cover rounded-lg">
                 </div>
                 <div class="space-y-4 mt-8">
-                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Coffee Shop" class="w-full h-64 object-cover rounded-lg">
-                    <img src="{% static 'images/hero-coffee.jpg' %}" alt="Latte Art" class="w-full h-48 object-cover rounded-lg">
+                    <img src="{% static 'images/hero-coffee.png' %}" alt="Coffee Shop" class="w-full h-64 object-cover rounded-lg">
+                    <img src="{% static 'images/hero-coffee.png' %}" alt="Latte Art" class="w-full h-48 object-cover rounded-lg">
                 </div>
             </div>
 
             <!-- Testimonials -->
             <div class="flex flex-col justify-center" data-aos="fade-left">
-                <h2 class="text-2xl md:text-3xl font-bold text-coffee-brown mb-8">What our customers say about us</h2>
+                <h2 class="text-2xl md:text-3xl ffont-modern text-coffee-brown mb-8">مشتریان ما چه می‌گویند</h2>
 
                 <!-- Testimonial 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                     <div class="flex items-center mb-4">
                         <img src="{% static 'images/testimonial-1.jpg' %}" alt="Customer" class="w-12 h-12 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h3 class="font-bold text-coffee-brown">John Smith</h3>
+                        <div class="mr-4">
+                            <h3 class="font-modern text-coffee-brown">جان اسمیت</h3>
                             <div class="flex text-yellow-400">
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"The coffee from Coffeo is simply amazing. I've never tasted such fresh and
-                        flavorful beans. Their service is top-notch too!"</p>
+                    <p class="text-gray-600 font-elegant">"قهوه کافیو به سادگی شگفت‌انگیز است. هرگز دانه‌های تازه و
+                        خوش‌طعم‌تری نچشیده‌ام. خدماتشان نیز عالی است!"</p>
                 </div>
 
                 <!-- Testimonial 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
                         <img src="{% static 'images/testimonial-1.jpg' %}" alt="Customer" class="w-12 h-12 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h3 class="font-bold text-coffee-brown">Sarah Johnson</h3>
+                        <div class="mr-4">
+                            <h3 class="font-modern text-coffee-brown">سارا جانسون</h3>
                             <div class="flex text-yellow-400">
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    <path
+                                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"I love how they roast the beans only after ordering. You can really taste
-                        the difference in freshness. Will definitely order again!"</p>
+                    <p class="text-gray-600 font-elegant">"دوست دارم که دانه‌ها را فقط پس از سفارش برشته می‌کنند. واقعاً
+                        می‌توانید تفاوت تازگی را بچشید. حتماً دوباره سفارش خواهم داد!"</p>
                 </div>
             </div>
         </div>

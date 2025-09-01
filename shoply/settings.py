@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # My app
     'pages.apps.PagesConfig',
+    'menu.apps.MenuConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [

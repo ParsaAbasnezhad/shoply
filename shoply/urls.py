@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Address my app
     path('', include('pages.urls')),
+    path('',include('accounts.urls')),
 
 ]
